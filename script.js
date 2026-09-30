@@ -59,7 +59,7 @@ const PROGRAMACAO = [
   {
     horario: "16h15 – 16h30",
     titulo: "Terço",
-    responsaveis: "Coroinhas de Branquinha",
+    responsaveis: "Coroinhas de São Sebastião",
     descricao: "Momento de oração e devoção mariana.",
   },
   {
