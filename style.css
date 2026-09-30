@@ -347,6 +347,17 @@ button:focus-visible {
   color: var(--cor-texto-suave);
 }
 
+.rodape__credito {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.rodape__credito a {
+  color: inherit;
+  font-weight: 700;
+}
+
 
 /* Celular */
 
