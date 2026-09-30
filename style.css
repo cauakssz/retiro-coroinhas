@@ -353,6 +353,16 @@ button:focus-visible {
   opacity: 0.85;
 }
 
+.rodape__credito::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 2px;
+  margin: 0 auto 1.25rem;
+  border-radius: 2px;
+  background: var(--cor-destaque);
+}
+
 .rodape__credito a {
   color: inherit;
   font-weight: 700;
@@ -392,5 +402,22 @@ button:focus-visible {
     height: 260px;
     align-self: center;
     margin-top: 2.5rem;
+  }
+
+  .rodape {
+    padding: 1.75rem 0 calc(1.75rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .rodape__credito {
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .rodape__credito span {
+    display: block;
+  }
+
+  .rodape__credito a {
+    padding: 0.35rem 0.25rem;
   }
 }
