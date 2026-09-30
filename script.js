@@ -1,5 +1,3 @@
-const LINK_DO_FORMULARIO = "";
-
 const PROGRAMACAO = [
   {
     horario: "8h – 8h30",
@@ -84,10 +82,6 @@ const PROGRAMACAO = [
   },
 ];
 
-const TEXTO_BOTAO_COPIAR = "Copiar chave Pix";
-const TEMPO_MENSAGEM_COPIA_EM_MS = 2500;
-
-
 function criarItemDaProgramacao(atividade) {
   const item = document.createElement("li");
   item.className = "programacao__item";
@@ -109,27 +103,4 @@ function mostrarProgramacao() {
   PROGRAMACAO.forEach((atividade) => lista.appendChild(criarItemDaProgramacao(atividade)));
 }
 
-function ligarBotaoDeInscricao() {
-  if (LINK_DO_FORMULARIO) {
-    document.getElementById("botao-inscricao").href = LINK_DO_FORMULARIO;
-  }
-}
-
-function ligarBotaoCopiarPix() {
-  const botao = document.getElementById("pix-copiar");
-  const chave = document.getElementById("pix-chave").textContent;
-
-  botao.addEventListener("click", async () => {
-    try {
-      await navigator.clipboard.writeText(chave);
-      botao.textContent = "Chave copiada!";
-    } catch {
-      botao.textContent = "Selecione e copie a chave acima";
-    }
-    setTimeout(() => (botao.textContent = TEXTO_BOTAO_COPIAR), TEMPO_MENSAGEM_COPIA_EM_MS);
-  });
-}
-
-
 mostrarProgramacao();
-ligarBotaoDeInscricao();
