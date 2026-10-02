@@ -41,7 +41,6 @@ const PROGRAMACAO = [
   {
     horario: "13h15 – 14h45",
     titulo: "3ª Palestra – Formação litúrgica",
-    responsaveis: "Diácono de São José da Laje",
     descricao: "Liturgia, serviço do altar, gestos, objetos litúrgicos e participação na celebração.",
   },
   {
